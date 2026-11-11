@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#4a1025">
+
+<title>शुभविवाह | मंगल परिणय</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&family=Mukta:wght@400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+ --wine:#4a1025;
+ --wine2:#762541;
+ --gold:#c69a52;
+ --cream:#fff8eb;
+ --ivory:#fffdf7;
+ --text:#4b2930;
+}
+
+* {
+ box-sizing:border-box;
+}
+
+html {
+ scroll-behavior:smooth;
+}
+
+body {
+ margin:0;
+ background:var(--cream);
+ color:var(--text);
+ font-family:'Mukta',sans-serif;
+ overflow-x:hidden;
+}
+
+h1,h2,h3 {
+ font-family:'Tiro Devanagari Marathi',serif;
+}
+
+button {
+ font-family:inherit;
+}
+
+/* OPENING SCREEN */
+
+#intro {
+ position:fixed;
+ inset:0;
+ z-index:1000;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding:20px;
+ text-align:center;
+ background:radial-gradient(circle,#fffdf7,#efd7a9,#762541);
+ transition:1s;
+}
+
+#intro.hide {
+ opacity:0;
+ visibility:hidden;
+}
+
+.intro-card {
+ max-width:480px;
+ width:100%;
+ padding:40px 25px;
+ border:2px solid var(--gold);
+ border-radius:220px 220px 25px 25px;
+ background:#fffaf0ed;
+ box-shadow:0 20px 70px #4a102544;
+ animation:appear 1.5s ease;
+}
+
+@keyframes appear {
+ from {
+  opacity:0;
+  transform:translateY(35px);
+ }
+ to {
+  opacity:1;
+  transform:translateY(0);
+ }
+}
+
+.ganesh {
+ font-size:55px;
+ animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+ 50% {
+  transform:translateY(-10px);
+ }
+}
+
+.intro-card h1 {
+ font-family:'Yatra One';
+ font-size:48px;
+ color:var(--wine);
+}
+
+.intro-card p {
+ font:18px/2 'Tiro Devanagari Marathi';
+ color:var(--wine);
+}
+
+.open-btn {
+ background:linear-gradient(135deg,var(--wine),var(--wine2));
+ color:#ffe7b0;
+ padding:14px 32px;
+ border:1px solid var(--gold);
+ border-radius:35px;
+ font-size:17px;
+ cursor:pointer;
+}
+
+/* NAVIGATION */
+
+header {
+ position:sticky;
+ top:0;
+ z-index:50;
+ background:#4a1025ee;
+ backdrop-filter:blur(12px);
+}
+
+nav {
+ max-width:1100px;
+ margin:auto;
+ padding:13px 15px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ flex-wrap:wrap;
+ gap:12px;
+}
+
+.logo {
+ font:25px 'Yatra One';
+ color:#f2d69d;
+}
+
+nav a {
+ text-decoration:none;
+ color:#fff0d8;
+ margin:0 7px;
+ font-size:14px;
+}
+
+/* HERO SECTION */
+
+.hero {
+ min-height:92vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ padding:55px 15px;
+ background:radial-gradient(ellipse,#fffdf7,#f5e2bd);
+}
+
+.hero-content {
+ max-width:850px;
+ margin:auto;
+}
+
+.mangal {
+ font:19px/2 'Tiro Devanagari Marathi';
+ color:var(--wine);
+}
+
+.flower {
+ color:var(--gold);
+ font-size:30px;
+ letter-spacing:10px;
+}
+
+.hero h1 {
+ font:clamp(48px,10vw,85px) 'Yatra One';
+ color:var(--wine);
+ margin:15px 0;
+}
+
+.hero-text {
+ font:22px/1.8 'Tiro Devanagari Marathi';
+ color:var(--wine);
+}
+
+.photo-frame {
+ width:min(390px,85vw);
+ margin:25px auto;
+ padding:9px;
+ border:2px solid var(--gold);
+ border-radius:210px 210px 20px 20px;
+ background:linear-gradient(135deg,#fff,#e9c783);
+ box-shadow:0 20px 50px #4a102533;
+}
+
+.photo-frame img {
+ width:100%;
+ height:450px;
+ object-fit:cover;
+ object-position:center 35%;
+ border-radius:200px 200px 14px 14px;
+}
+
+.names {
+ font:clamp(35px,7vw,55px) 'Yatra One';
+ color:var(--wine);
+}
+
+.date {
+ display:inline-block;
+ border-top:1px solid var(--gold);
+ border-bottom:1px solid var(--gold);
+ padding:10px 25px;
+ font-size:21px;
+ color:var(--wine);
+}
+
+</style>
+  </head>
+  
